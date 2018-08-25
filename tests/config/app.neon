@@ -1,0 +1,12 @@
+services:
+	- Mangoweb\Tester\PresenterTester\PresenterTester(baseUrl: http://localhost, listeners: [])
+	router: Nette\Application\Routers\SimpleRouter
+application:
+	scanDirs: false
+	mapping:
+		*: MangowebTests\Tester\PresenterTester\Presenters\*\*Presenter
+
+security:
+	debugger: false
+di:
+	debugger: false
